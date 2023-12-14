@@ -3,8 +3,11 @@ package main
 import "github.com/01-edu/z01"
 
 func main() {
-	for char := 'z'; char >= 'a'; char-- {
-		z01.PrintRune(char)
+	var i int = 0
+
+	for i <= 9 {
+		z01.PrintRune(rune('0' + i))
+		i++
 	}
 	z01.PrintRune('\n')
 }
